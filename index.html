@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de la compra - NutriApp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista de la compra 🍽️</h1>
+
+      <section class="recetas">
+        <div class="scroll-recetas">
+          <div class="card">
+            <div
+              class="card-img"
+              style="background-image: url('images/tacos.webp')"
+            ></div>
+            <span class="card-txt">Ensalada de pollo</span>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="background-image: url('images/cacioepepe.webp')"
+            ></div>
+            <span class="card-txt">Espageti Cacio e Pepe</span>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="background-image: url('images/bolognese-lasagna.webp')"
+            ></div>
+            <span class="card-txt">Lasaña a la Boloñesa</span>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="background-image: url('ruta/a/tu/imagen4.jpg')"
+            ></div>
+            <span class="card-txt">Pasta al pesto</span>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="background-image: url('ruta/a/tu/imagen5.jpg')"
+            ></div>
+            <span class="card-txt">Gazpacho andaluz</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ingredients">
+        <div class="ticket">
+          <h2>Ingredientes</h2>
+          <ul>
+            <li>Pechuga de pollo</li>
+            <li>Lechuga</li>
+            <li>Tomate</li>
+            <li>Tortillas de maíz</li>
+            <li>Filetes de pescado</li>
+            <li>Lentejas</li>
+            <li>Pasta</li>
+            <li>Pechuga de pollo</li>
+            <li>Lechuga</li>
+            <li>Tomate</li>
+            <li>Tortillas de maíz</li>
+            <li>Filetes de pescado</li>
+            <li>Lentejas</li>
+            <li>Pasta</li>
+            <li>Pechuga de pollo</li>
+            <li>Lechuga</li>
+            <li>Tomate</li>
+            <li>Tortillas de maíz</li>
+            <li>Filetes de pescado</li>
+            <li>Lentejas</li>
+            <li>Pasta</li>
+            <li>Albahaca</li>
+          </ul>
+          <div class="ticket-buttons" style="display: none">
+            <button class="boton">📋 Copiar</button>
+            <button class="boton">🧾 PDF</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="navbar">
+      <div class="nav-icon">👨‍🍳</div>
+      <div class="nav-icon">🧺</div>
+    </div>
+  </body>
+  <script>
+    document.querySelectorAll('.ticket').forEach(ticket => {
+      ticket.addEventListener('click', function () {
+        const buttons = ticket.querySelector('.ticket-buttons');
+        
+        // Alternar la visibilidad de los botones
+        if (buttons.style.display === 'flex') {
+          buttons.style.display = 'none'; // Ocultar los botones
+          ticket.classList.remove('dark'); // Restaurar el fondo
+        } else {
+          buttons.style.display = 'flex'; // Mostrar los botones
+          ticket.classList.add('dark'); // Oscurecer el fondo
+        }
+      });
+    });
+  </script>
+  
+  
+</html>
