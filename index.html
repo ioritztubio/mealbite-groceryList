@@ -8,9 +8,8 @@
   </head>
   <body>
     <div class="container">
-      <h1>Lista de la compra 🍽️</h1>
-
-      <section class="recetas">
+      <section class="head">
+        <h1>Lista de la compra 🍽️</h1>
         <div class="scroll-recetas">
           <div class="card">
             <div
@@ -91,21 +90,19 @@
     </div>
   </body>
   <script>
-    document.querySelectorAll('.ticket').forEach(ticket => {
-      ticket.addEventListener('click', function () {
-        const buttons = ticket.querySelector('.ticket-buttons');
-        
+    document.querySelectorAll(".ticket").forEach((ticket) => {
+      ticket.addEventListener("click", function () {
+        const buttons = ticket.querySelector(".ticket-buttons");
+
         // Alternar la visibilidad de los botones
-        if (buttons.style.display === 'flex') {
-          buttons.style.display = 'none'; // Ocultar los botones
-          ticket.classList.remove('dark'); // Restaurar el fondo
+        if (buttons.style.display === "flex") {
+          buttons.style.display = "none"; // Ocultar los botones
+          ticket.classList.remove("dark"); // Restaurar el fondo
         } else {
-          buttons.style.display = 'flex'; // Mostrar los botones
-          ticket.classList.add('dark'); // Oscurecer el fondo
+          buttons.style.display = "flex"; // Mostrar los botones
+          ticket.classList.add("dark"); // Oscurecer el fondo
         }
       });
     });
   </script>
-  
-  
 </html>

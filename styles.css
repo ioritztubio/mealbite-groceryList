@@ -6,8 +6,14 @@ body {
   color: #222;
 }
 
+.container {
+  padding-bottom: 100px;
+  height: 100dvh;
+}
+
 section {
   margin-block: 20px;
+  padding: 16px;
 }
 .scroll-recetas {
   display: flex;
@@ -48,18 +54,16 @@ section {
   font-weight: bold;
 }
 
-.container {
-  padding: 20px;
-  padding-bottom: 100px;
-  height: 100dvh;
-}
-
 h2 {
   margin-top: 0;
 }
 
+.ingredients {
+  display: flex;
+  justify-content: center;
+}
 .ticket {
-  width: 320px;
+  width: 95%;
   padding: 10px;
   border: solid 1px #ccc;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra hacia adentro */
